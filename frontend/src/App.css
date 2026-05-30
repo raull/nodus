@@ -1,0 +1,126 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+nav button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+}
+
+nav button.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e5e5e5;
+}
+
+.panel h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #1a1a1a;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+}
+
+.success {
+  margin-top: 12px;
+  color: #16a34a;
+  font-size: 14px;
+}
+
+.error {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.result {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.answer {
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.sources h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.source {
+  font-size: 13px;
+  color: #555;
+  padding: 10px 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  line-height: 1.5;
+}
